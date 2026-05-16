@@ -167,25 +167,25 @@
 <text x="428" y="154" font-family="monospace" font-size="10" fill="#56E1E8">✨ Building cool stuff</text>
 
 <rect x="184" y="174" width="270" height="36" rx="8"  fill="rgba(92,88,237,.08)"   stroke="rgba(92,88,237,.25)"   stroke-width="1"/>
-<text x="196" y="189" font-family="monospace" font-size="9"  fill="#8b99ae">🌐 INTERACTIVE 3D · SPLINE</text>
-<text x="196" y="204" font-family="monospace" font-size="9"  fill="#5C58ED">orbitalbluestar.spline.design ↗</text>
+<text x="196" y="189" font-family="monospace" font-size="9"  fill="#8b99ae">🌐 I LOVE INTERACTIVE 3D DESIGNS</text>
+<text x="196" y="204" font-family="monospace" font-size="9"  fill="#5C58ED">lover of opossums and cats</text>
 <text x="620" y="224" font-family="monospace" font-size="8"  fill="rgba(139,153,174,.4)">updated 16 de may de 2026</text>
 
 <!-- ═══ STATS ═══ -->
 <rect x="24"  y="252" width="254" height="90" rx="12" class="glass"/>
 <text x="151" y="290" font-family="monospace" font-size="26" font-weight="700" class="txt" text-anchor="middle">94</text>
-<text x="151" y="306" font-family="monospace" font-size="8"  class="muted" text-anchor="middle" letter-spacing="2">CONTRIBUCIONES</text>
+<text x="151" y="306" font-family="monospace" font-size="8"  class="muted" text-anchor="middle" letter-spacing="2">CONTRIBUTIONS</text>
 <rect x="60" y="328" width="182" height="2" rx="1" fill="url(#sl1)" opacity=".7"/>
 
 <rect x="294" y="252" width="254" height="90" rx="12" class="glass2"/>
 <text x="421" y="290" font-family="monospace" font-size="26" font-weight="700" class="txt" text-anchor="middle">16</text>
-<text x="421" y="306" font-family="monospace" font-size="8"  class="muted" text-anchor="middle" letter-spacing="2">REPOSITORIOS</text>
+<text x="421" y="306" font-family="monospace" font-size="8"  class="muted" text-anchor="middle" letter-spacing="2">REPOSITORIES</text>
 <rect x="330" y="328" width="182" height="2" rx="1" fill="url(#sl2)" opacity=".7"/>
 
 <rect x="564" y="252" width="272" height="90" rx="12" class="glass3"/>
-<text x="700" y="282" font-family="monospace" font-size="20" font-weight="700" class="txt" text-anchor="middle">2 días</text>
-<text x="700" y="300" font-family="monospace" font-size="8"  class="muted" text-anchor="middle" letter-spacing="1">RACHA ACTUAL</text>
-<text x="700" y="316" font-family="monospace" font-size="8"  class="muted" text-anchor="middle" letter-spacing="1">Longest: 4 días</text>
+<text x="700" y="282" font-family="monospace" font-size="20" font-weight="700" class="txt" text-anchor="middle">2 days</text>
+<text x="700" y="300" font-family="monospace" font-size="8"  class="muted" text-anchor="middle" letter-spacing="1">CURRENT STREAK</text>
+<text x="700" y="316" font-family="monospace" font-size="8"  class="muted" text-anchor="middle" letter-spacing="1">Longest: 4 days</text>
 <rect x="600" y="328" width="200" height="2" rx="1" fill="url(#sl3)" opacity=".7"/>
 
 <!-- ═══ TECH STACK ═══ -->
@@ -232,9 +232,9 @@
 
 <!-- ═══ ACTIVITY ═══ -->
 <rect x="434" y="360" width="402" height="360" rx="12" class="glass2"/>
-<text x="450" y="384" font-family="monospace" font-size="9" class="sec" letter-spacing="2">📊 ACTIVIDAD SEMANAL</text>
+<text x="450" y="384" font-family="monospace" font-size="9" class="sec" letter-spacing="2">📊 WEEKLY ACTIVITY</text>
 <line x1="450" y1="392" x2="818" y2="392" stroke="rgba(92,88,237,.15)" stroke-width="1"/>
-<text x="450" y="412" font-family="monospace" font-size="8" class="muted">commits últimos 7 días</text>
+<text x="450" y="412" font-family="monospace" font-size="8" class="muted">commits last 7 days</text>
 
 <rect x="470" y="479" width="26" height="4" rx="3" fill="url(#barGrad)" opacity="0.65" class="bar" style="animation-delay:0.00s"/>
 <rect x="508" y="479" width="26" height="4" rx="3" fill="url(#barGrad)" opacity="0.65" class="bar" style="animation-delay:0.15s"/>
@@ -243,19 +243,19 @@
 <rect x="622" y="479" width="26" height="4" rx="3" fill="url(#barGrad)" opacity="0.65" class="bar" style="animation-delay:0.60s"/>
 <rect x="660" y="413" width="26" height="70" rx="3" fill="url(#barGrad)" opacity="1" class="bar" style="animation-delay:0.75s"/>
 <rect x="698" y="433" width="26" height="50" rx="3" fill="url(#barGrad)" opacity="0.9" class="bar" style="animation-delay:0.90s"/>
-<text x="483" y="498" font-family="monospace" font-size="9" class="muted" text-anchor="middle">L</text>
-<text x="521" y="498" font-family="monospace" font-size="9" class="muted" text-anchor="middle">M</text>
-<text x="559" y="498" font-family="monospace" font-size="9" class="muted" text-anchor="middle">X</text>
-<text x="597" y="498" font-family="monospace" font-size="9" class="muted" text-anchor="middle">J</text>
-<text x="635" y="498" font-family="monospace" font-size="9" class="muted" text-anchor="middle">V</text>
+<text x="483" y="498" font-family="monospace" font-size="9" class="muted" text-anchor="middle">M</text>
+<text x="521" y="498" font-family="monospace" font-size="9" class="muted" text-anchor="middle">T</text>
+<text x="559" y="498" font-family="monospace" font-size="9" class="muted" text-anchor="middle">W</text>
+<text x="597" y="498" font-family="monospace" font-size="9" class="muted" text-anchor="middle">T</text>
+<text x="635" y="498" font-family="monospace" font-size="9" class="muted" text-anchor="middle">F</text>
 <text x="673" y="498" font-family="monospace" font-size="9" class="muted" text-anchor="middle">S</text>
-<text x="711" y="498" font-family="monospace" font-size="9" class="muted" text-anchor="middle">D</text>
+<text x="711" y="498" font-family="monospace" font-size="9" class="muted" text-anchor="middle">S</text>
 
 
-<text x="450" y="518" font-family="monospace" font-size="11" class="muted">🔥 Racha actual: <tspan fill="#56E1E8" font-weight="700">2 días</tspan></text>
+<text x="450" y="518" font-family="monospace" font-size="11" class="muted">🔥 Current streak: <tspan fill="#56E1E8" font-weight="700">2 días</tspan></text>
 <text x="450" y="538" font-family="monospace" font-size="11" class="muted">⭐ Longest streak: <tspan fill="#3FA9F5" font-weight="700">4 días</tspan></text>
-<text x="450" y="558" font-family="monospace" font-size="11" class="muted">📊 Total contribuciones: <tspan fill="#5C58ED">94</tspan></text>
-<text x="450" y="578" font-family="monospace" font-size="11" class="muted">📦 Repositorios públicos: <tspan fill="#3FA9F5">16</tspan></text>
+<text x="450" y="558" font-family="monospace" font-size="11" class="muted">📊 Total contributions: <tspan fill="#5C58ED">94</tspan></text>
+<text x="450" y="578" font-family="monospace" font-size="11" class="muted">📦 Public repositories: <tspan fill="#3FA9F5">16</tspan></text>
 
 <text x="450" y="610" font-family="monospace" font-size="8" class="muted" letter-spacing="1.5">TOP LANGUAGES</text>
 
