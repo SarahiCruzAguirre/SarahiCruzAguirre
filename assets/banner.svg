@@ -1,0 +1,308 @@
+<svg width="860" height="980" viewBox="0 0 860 980" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<style>
+@keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
+@keyframes floatOrb1{0%,100%{transform:translate(0,0) scale(1)}33%{transform:translate(18px,-24px) scale(1.06)}66%{transform:translate(-12px,14px) scale(.95)}}
+@keyframes floatOrb2{0%,100%{transform:translate(0,0) scale(1)}33%{transform:translate(-20px,16px) scale(1.04)}66%{transform:translate(14px,-10px) scale(.97)}}
+@keyframes floatOrb3{0%,100%{transform:translate(0,0)}50%{transform:translate(10px,-18px)}}
+@keyframes glitchCore{0%,88%,100%{transform:translate(0,0) skew(0);opacity:1}89%{transform:translate(-2px,1px) skew(7deg);opacity:.7}92%{transform:translate(0,0);opacity:1}95%{transform:translate(3px,-1px) skew(-5deg);opacity:.6}97%{transform:translate(0,0);opacity:1}}
+@keyframes glitchR{0%,88%,100%{opacity:0}89%{opacity:.7;transform:translate(-4px,-2px)}92%{opacity:0}95%{opacity:.7;transform:translate(5px,2px)}97%{opacity:0}}
+@keyframes glitchC{0%,88%,100%{opacity:0}89%{opacity:.7;transform:translate(4px,2px)}92%{opacity:0}95%{opacity:.7;transform:translate(-5px,-2px)}97%{opacity:0}}
+@keyframes barPulse{0%,100%{opacity:.65}50%{opacity:1}}
+@keyframes particleUp{0%{transform:translateY(0);opacity:.9}100%{transform:translateY(-320px);opacity:0}}
+@keyframes spinRing{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+@keyframes opossum{0%,100%{transform:translateY(0) rotate(-3deg)}50%{transform:translateY(-8px) rotate(3deg)}}
+@keyframes tailWag{0%,100%{transform:rotate(-10deg)}50%{transform:rotate(15deg)}}
+@keyframes eyeBlink{0%,90%,100%{transform:scaleY(1)}95%{transform:scaleY(.1)}}
+@keyframes rainDrop{from{transform:translateY(0)}to{transform:translateY(1800px)}}
+
+:root{
+  --bg:#0d1117;--panel:rgba(13,27,42,.85);--glass:rgba(255,255,255,.04);
+  --brd:rgba(63,169,245,.25);--brd2:rgba(92,88,237,.3);
+  --txt:#e2e8f0;--muted:#8b99ae;--acc:#3FA9F5;--cyan:#56E1E8;--purple:#5C58ED;
+}
+@media(prefers-color-scheme:light){
+  :root{--bg:#f0f6ff;--panel:rgba(255,255,255,.9);--glass:rgba(63,169,245,.06);
+  --brd:rgba(37,99,235,.3);--brd2:rgba(79,70,229,.3);
+  --txt:#0f172a;--muted:#475569;--acc:#1d4ed8;--cyan:#0891b2;--purple:#4f46e5;}
+  .rain{display:none}.title-g1,.title-g2{display:none}.title-main{animation:none}
+}
+.bg{fill:var(--bg)}.txt{fill:var(--txt)}.muted{fill:var(--muted)}.acc{fill:var(--acc)}.cyan{fill:var(--cyan)}.purple{fill:var(--purple)}
+.glass{fill:var(--glass);stroke:var(--brd);stroke-width:1}
+.glass2{fill:var(--glass);stroke:var(--brd2);stroke-width:1}
+.glass3{fill:rgba(86,225,232,.05);stroke:rgba(86,225,232,.25);stroke-width:1}
+.cursor{animation:blink 1.1s step-end infinite}
+.title-main{animation:glitchCore 5s infinite}
+.title-g1{opacity:0;animation:glitchR 5s infinite;fill:#93c5fd}
+.title-g2{opacity:0;animation:glitchC 5s infinite;fill:#1e40af}
+.rain{font-family:monospace;font-size:12px;pointer-events:none}
+.col{animation:rainDrop linear infinite}
+.opossum-body{animation:opossum 3s ease-in-out infinite;transform-origin:64px 64px}
+.opossum-tail{animation:tailWag 2s ease-in-out infinite;transform-origin:78px 85px}
+.eye{animation:eyeBlink 4s ease-in-out infinite}
+.bar{animation:barPulse 2s ease-in-out infinite}
+.particle{animation:particleUp linear infinite}
+.ring{animation:spinRing 12s linear infinite;transform-origin:50% 50%}
+.sec{font-family:monospace;font-size:9px;letter-spacing:2px;fill:var(--muted)}
+.tag{fill:var(--glass);stroke:var(--brd);stroke-width:.8}
+.tag-t{font-family:monospace;font-size:10px;fill:var(--acc)}
+.tag2{fill:var(--glass);stroke:var(--brd2);stroke-width:.8}
+.tag2-t{font-family:monospace;font-size:10px;fill:var(--purple)}
+.tag3{fill:rgba(86,225,232,.08);stroke:rgba(86,225,232,.3);stroke-width:.8}
+.tag3-t{font-family:monospace;font-size:10px;fill:var(--cyan)}
+</style>
+
+<radialGradient id="orb1" cx="50%" cy="50%" r="50%">
+  <stop offset="0%" stop-color="#5C58ED" stop-opacity=".7"/>
+  <stop offset="100%" stop-color="#5C58ED" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="orb2" cx="50%" cy="50%" r="50%">
+  <stop offset="0%" stop-color="#3FA9F5" stop-opacity=".6"/>
+  <stop offset="100%" stop-color="#3FA9F5" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="orb3" cx="50%" cy="50%" r="50%">
+  <stop offset="0%" stop-color="#56E1E8" stop-opacity=".5"/>
+  <stop offset="100%" stop-color="#56E1E8" stop-opacity="0"/>
+</radialGradient>
+<linearGradient id="topGlow" x1="0" y1="0" x2="860" y2="0" gradientUnits="userSpaceOnUse">
+  <stop offset="0"   stop-color="#122D70" stop-opacity="0"/>
+  <stop offset=".4"  stop-color="#5C58ED"/>
+  <stop offset=".7"  stop-color="#3FA9F5"/>
+  <stop offset="1"   stop-color="#56E1E8" stop-opacity="0"/>
+  <animateTransform attributeName="gradientTransform" type="translate" values="-200 0;200 0;-200 0" dur="7s" repeatCount="indefinite"/>
+</linearGradient>
+<linearGradient id="sl1" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#3FA9F5"/><stop offset="1" stop-color="#5C58ED"/></linearGradient>
+<linearGradient id="sl2" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#5C58ED"/><stop offset="1" stop-color="#56E1E8"/></linearGradient>
+<linearGradient id="sl3" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#56E1E8"/><stop offset="1" stop-color="#3FA9F5"/></linearGradient>
+<linearGradient id="barGrad" x1="0" y1="0" x2="0" y2="1">
+  <stop offset="0%" stop-color="#5C58ED"/>
+  <stop offset="100%" stop-color="#3FA9F5"/>
+</linearGradient>
+<clipPath id="rc"><rect width="860" height="980" rx="16"/></clipPath>
+</defs>
+
+<g clip-path="url(#rc)">
+<rect width="860" height="980" rx="16" class="bg"/>
+
+<!-- Matrix rain -->
+<g class="rain">
+<text x="50"  y="-600" class="col" fill="#3FA9F5" opacity=".12" style="animation-duration:13s;animation-delay:-2s"><tspan x="50"  dy="15">ﾋ</tspan><tspan x="50"  dy="15">1</tspan><tspan x="50"  dy="15">ｴ</tspan><tspan x="50"  dy="15">ﾈ</tspan><tspan x="50"  dy="15">ﾐ</tspan><tspan x="50"  dy="15">ﾇ</tspan><tspan x="50"  dy="15">ﾂ</tspan><tspan x="50"  dy="15">ｵ</tspan><tspan x="50"  dy="15">ﾃ</tspan><tspan x="50"  dy="15">0</tspan><tspan x="50"  dy="15">ﾒ</tspan><tspan x="50"  dy="15">ｾ</tspan><tspan x="50"  dy="15">ﾋ</tspan><tspan x="50"  dy="15">ｱ</tspan><tspan x="50"  dy="15">ﾜ</tspan><tspan x="50"  dy="15">ﾆ</tspan><tspan x="50"  dy="15">ｰ</tspan><tspan x="50"  dy="15">1</tspan><tspan x="50"  dy="15">ｶ</tspan><tspan x="50"  dy="15">ﾜ</tspan><tspan x="50"  dy="15">ｽ</tspan><tspan x="50"  dy="15">ｹ</tspan><tspan x="50"  dy="15">ﾘ</tspan><tspan x="50"  dy="15">ﾑ</tspan><tspan x="50"  dy="15">ﾗ</tspan><tspan x="50"  dy="15">ﾂ</tspan><tspan x="50"  dy="15">ﾋ</tspan><tspan x="50"  dy="15">ﾗ</tspan><tspan x="50"  dy="15">ﾈ</tspan><tspan x="50"  dy="15">ﾏ</tspan></text>
+<text x="780" y="-600" class="col" fill="#5C58ED" opacity=".15" style="animation-duration:10s;animation-delay:-5s"><tspan x="780" dy="15">ﾗ</tspan><tspan x="780" dy="15">ｻ</tspan><tspan x="780" dy="15">ﾎ</tspan><tspan x="780" dy="15">ﾋ</tspan><tspan x="780" dy="15">ﾓ</tspan><tspan x="780" dy="15">ﾑ</tspan><tspan x="780" dy="15">ｶ</tspan><tspan x="780" dy="15">ｽ</tspan><tspan x="780" dy="15">ﾆ</tspan><tspan x="780" dy="15">ﾀ</tspan><tspan x="780" dy="15">ﾇ</tspan><tspan x="780" dy="15">ﾏ</tspan><tspan x="780" dy="15">ｻ</tspan><tspan x="780" dy="15">ﾍ</tspan><tspan x="780" dy="15">0</tspan><tspan x="780" dy="15">ｰ</tspan><tspan x="780" dy="15">ﾋ</tspan><tspan x="780" dy="15">ﾊ</tspan><tspan x="780" dy="15">ｴ</tspan><tspan x="780" dy="15">1</tspan><tspan x="780" dy="15">ｾ</tspan><tspan x="780" dy="15">ｼ</tspan><tspan x="780" dy="15">ﾈ</tspan><tspan x="780" dy="15">ﾅ</tspan><tspan x="780" dy="15">ｻ</tspan><tspan x="780" dy="15">ﾜ</tspan><tspan x="780" dy="15">0</tspan><tspan x="780" dy="15">ｾ</tspan><tspan x="780" dy="15">ﾅ</tspan><tspan x="780" dy="15">ｰ</tspan></text>
+<text x="420" y="-600" class="col" fill="#56E1E8" opacity=".10" style="animation-duration:16s;animation-delay:-8s"><tspan x="420" dy="15">ｳ</tspan><tspan x="420" dy="15">ﾎ</tspan><tspan x="420" dy="15">ｻ</tspan><tspan x="420" dy="15">0</tspan><tspan x="420" dy="15">0</tspan><tspan x="420" dy="15">ﾑ</tspan><tspan x="420" dy="15">ﾈ</tspan><tspan x="420" dy="15">ﾊ</tspan><tspan x="420" dy="15">ﾒ</tspan><tspan x="420" dy="15">ﾘ</tspan><tspan x="420" dy="15">ﾎ</tspan><tspan x="420" dy="15">ｽ</tspan><tspan x="420" dy="15">ﾜ</tspan><tspan x="420" dy="15">0</tspan><tspan x="420" dy="15">1</tspan><tspan x="420" dy="15">ｹ</tspan><tspan x="420" dy="15">ﾒ</tspan><tspan x="420" dy="15">1</tspan><tspan x="420" dy="15">ﾅ</tspan><tspan x="420" dy="15">ﾃ</tspan><tspan x="420" dy="15">ｴ</tspan><tspan x="420" dy="15">ｶ</tspan><tspan x="420" dy="15">ﾑ</tspan><tspan x="420" dy="15">ﾑ</tspan><tspan x="420" dy="15">ﾐ</tspan><tspan x="420" dy="15">ｵ</tspan><tspan x="420" dy="15">ﾍ</tspan><tspan x="420" dy="15">ﾋ</tspan><tspan x="420" dy="15">ﾂ</tspan><tspan x="420" dy="15">ﾓ</tspan></text>
+</g>
+
+<!-- Orbs -->
+<g style="animation:floatOrb1 9s ease-in-out infinite"><ellipse cx="100" cy="180" rx="200" ry="200" fill="url(#orb1)" opacity=".55"/></g>
+<g style="animation:floatOrb2 11s ease-in-out infinite"><ellipse cx="800" cy="120" rx="180" ry="180" fill="url(#orb2)" opacity=".5"/></g>
+<g style="animation:floatOrb3 8s ease-in-out infinite"><ellipse cx="500" cy="820" rx="160" ry="160" fill="url(#orb3)" opacity=".4"/></g>
+
+<!-- Particles -->
+<circle cx="200" cy="720" r="2"   fill="#3FA9F5" opacity=".6" class="particle" style="animation-duration:6s;animation-delay:0s"/>
+<circle cx="650" cy="620" r="1.5" fill="#56E1E8" opacity=".5" class="particle" style="animation-duration:8s;animation-delay:-2s"/>
+<circle cx="400" cy="870" r="2.5" fill="#5C58ED" opacity=".4" class="particle" style="animation-duration:10s;animation-delay:-4s"/>
+<circle cx="750" cy="770" r="1.5" fill="#3FA9F5" opacity=".5" class="particle" style="animation-duration:7s;animation-delay:-6s"/>
+<circle cx="120" cy="520" r="2"   fill="#56E1E8" opacity=".4" class="particle" style="animation-duration:9s;animation-delay:-1s"/>
+
+<!-- Spinning ring -->
+<g transform="translate(790,460)">
+  <g class="ring"><circle r="40" fill="none" stroke="#5C58ED" stroke-width="1" stroke-dasharray="5 4" opacity=".3"/></g>
+  <circle r="28" fill="none" stroke="#3FA9F5" stroke-width=".8" opacity=".2"/>
+</g>
+
+<!-- Top glow + border -->
+<rect x="0" y="0" width="860" height="3" rx="2" fill="url(#topGlow)"/>
+<rect x=".5" y=".5" width="859" height="979" rx="15.5" fill="none" stroke="rgba(63,169,245,.2)" stroke-width="1"/>
+
+<!-- ═══ HERO ═══ -->
+<rect x="24" y="20" width="812" height="216" rx="14" class="glass"/>
+
+<!-- Opossum avatar -->
+<g transform="translate(44,36)">
+  <g style="animation:spinRing 6s linear infinite;transform-origin:64px 66px">
+    <circle cx="64" cy="66" r="60" fill="none" stroke="url(#sl1)" stroke-width="3" stroke-dasharray="60 140" stroke-linecap="round"/>
+  </g>
+  <circle cx="64" cy="66" r="56" fill="rgba(13,17,23,.9)" stroke="rgba(63,169,245,.15)" stroke-width="1"/>
+  <g class="opossum-body">
+    <ellipse cx="64" cy="80" rx="28" ry="24" fill="#c8c8d0"/>
+    <ellipse cx="64" cy="52" rx="22" ry="20" fill="#d8d8e0"/>
+    <ellipse cx="46" cy="36" rx="9"  ry="12" fill="#d0a0a8"/>
+    <ellipse cx="46" cy="36" rx="5"  ry="8"  fill="#f0c0c8"/>
+    <ellipse cx="82" cy="36" rx="9"  ry="12" fill="#d0a0a8"/>
+    <ellipse cx="82" cy="36" rx="5"  ry="8"  fill="#f0c0c8"/>
+    <ellipse cx="57" cy="56" rx="4.5" ry="5" fill="white"/>
+    <ellipse cx="71" cy="56" rx="4.5" ry="5" fill="white"/>
+    <g class="eye">
+      <circle cx="57" cy="56" r="3"   fill="#1a1a2e"/>
+      <circle cx="71" cy="56" r="3"   fill="#1a1a2e"/>
+      <circle cx="58" cy="55" r="1"   fill="white"/>
+      <circle cx="72" cy="55" r="1"   fill="white"/>
+    </g>
+    <ellipse cx="64" cy="62" rx="3" ry="2" fill="#e08080"/>
+    <path d="M61,65 Q64,68 67,65" fill="none" stroke="#999" stroke-width="1.2" stroke-linecap="round"/>
+    <path d="M38,74 Q30,81 34,88" fill="none" stroke="#b8b8c0" stroke-width="6" stroke-linecap="round"/>
+    <path d="M90,74 Q98,81 94,88" fill="none" stroke="#b8b8c0" stroke-width="6" stroke-linecap="round"/>
+    <ellipse cx="64" cy="82" rx="16" ry="14" fill="#e8e8f0" opacity=".6"/>
+    <ellipse cx="52" cy="98" rx="8"  ry="10" fill="#c0c0c8"/>
+    <ellipse cx="76" cy="98" rx="8"  ry="10" fill="#c0c0c8"/>
+  </g>
+  <path class="opossum-tail" d="M82,100 Q108,108 112,124 Q116,138 102,136" fill="none" stroke="#c8c8d0" stroke-width="5" stroke-linecap="round"/>
+  <text x="50" y="118" font-size="11" opacity=".9">💙</text>
+</g>
+
+<!-- Hero text -->
+<text x="184" y="62"  font-family="monospace" font-size="9"  class="muted" letter-spacing="2">FULL STACK DEVELOPER · she/her</text>
+<text x="184" y="98"  font-family="monospace" font-size="30" font-weight="700" class="title-g1">Sarahi Cruz Aguirre</text>
+<text x="184" y="98"  font-family="monospace" font-size="30" font-weight="700" class="title-g2">Sarahi Cruz Aguirre</text>
+<text x="184" y="98"  font-family="monospace" font-size="30" font-weight="700" class="txt title-main">Sarahi Cruz Aguirre</text>
+<text x="512" y="95"  font-family="monospace" font-size="32" fill="#56E1E8" class="cursor">|</text>
+<text x="184" y="124" font-family="monospace" font-size="13" fill="#5C58ED">@SarahiCruzAguirre · park02697@gmail.com</text>
+
+<rect x="184" y="138" width="108" height="24" rx="12" fill="rgba(63,169,245,.12)"  stroke="rgba(63,169,245,.35)"  stroke-width="1"/>
+<text x="204" y="154" font-family="monospace" font-size="11" fill="#3FA9F5">⚡ Open to Work</text>
+
+<rect x="300" y="138" width="110" height="24" rx="12" fill="rgba(92,88,237,.12)"   stroke="rgba(92,88,237,.35)"   stroke-width="1"/>
+<text x="318" y="154" font-family="monospace" font-size="11" fill="#5C58ED">🎯 Medellín, CO</text>
+
+<rect x="418" y="138" width="140" height="24" rx="12" fill="rgba(86,225,232,.10)"  stroke="rgba(86,225,232,.30)"  stroke-width="1"/>
+<text x="436" y="154" font-family="monospace" font-size="11" fill="#56E1E8">✨ Building cool stuff</text>
+
+<rect x="184" y="174" width="280" height="36" rx="8"  fill="rgba(92,88,237,.08)"   stroke="rgba(92,88,237,.25)"   stroke-width="1"/>
+<text x="196" y="189" font-family="monospace" font-size="9"  fill="#8b99ae">🌐 INTERACTIVE 3D · SPLINE</text>
+<text x="196" y="204" font-family="monospace" font-size="9"  fill="#5C58ED">orbitalbluestar.spline.design ↗</text>
+<text x="620" y="224" font-family="monospace" font-size="8"  fill="rgba(139,153,174,.4)">updated 16 de may de 2026</text>
+
+<!-- ═══ STATS ═══ -->
+<rect x="24"  y="252" width="254" height="90" rx="12" class="glass"/>
+<text x="151" y="290" font-family="monospace" font-size="26" font-weight="700" class="txt" text-anchor="middle">90</text>
+<text x="151" y="306" font-family="monospace" font-size="8"  class="muted" text-anchor="middle" letter-spacing="2">CONTRIBUCIONES</text>
+<rect x="60" y="328" width="182" height="2" rx="1" fill="url(#sl1)" opacity=".7"/>
+
+<rect x="294" y="252" width="254" height="90" rx="12" class="glass2"/>
+<text x="421" y="290" font-family="monospace" font-size="26" font-weight="700" class="txt" text-anchor="middle">16</text>
+<text x="421" y="306" font-family="monospace" font-size="8"  class="muted" text-anchor="middle" letter-spacing="2">REPOSITORIOS</text>
+<rect x="330" y="328" width="182" height="2" rx="1" fill="url(#sl2)" opacity=".7"/>
+
+<rect x="564" y="252" width="272" height="90" rx="12" class="glass3"/>
+<text x="700" y="282" font-family="monospace" font-size="20" font-weight="700" class="txt" text-anchor="middle">2 días</text>
+<text x="700" y="300" font-family="monospace" font-size="8"  class="muted" text-anchor="middle" letter-spacing="1">RACHA ACTUAL</text>
+<text x="700" y="316" font-family="monospace" font-size="8"  class="muted" text-anchor="middle" letter-spacing="1">Longest: 4 días</text>
+<rect x="600" y="328" width="200" height="2" rx="1" fill="url(#sl3)" opacity=".7"/>
+
+<!-- ═══ TECH STACK ═══ -->
+<rect x="24" y="360" width="390" height="360" rx="12" class="glass"/>
+<text x="40" y="384" font-family="monospace" font-size="9" class="sec" letter-spacing="2">⚙ TECH STACK</text>
+<line x1="40" y1="392" x2="398" y2="392" stroke="rgba(63,169,245,.15)" stroke-width="1"/>
+
+<text x="40" y="410" font-family="monospace" font-size="8" class="muted" letter-spacing="1.5">LANGUAGES</text>
+<rect x="40"  y="416" width="56" height="20" rx="10" class="tag"/><text x="54"  y="430" font-family="monospace" font-size="9" class="tag-t">Python</text>
+<rect x="102" y="416" width="76" height="20" rx="10" class="tag"/><text x="114" y="430" font-family="monospace" font-size="9" class="tag-t">JavaScript</text>
+<rect x="184" y="416" width="78" height="20" rx="10" class="tag"/><text x="196" y="430" font-family="monospace" font-size="9" class="tag-t">TypeScript</text>
+<rect x="268" y="416" width="46" height="20" rx="10" class="tag"/><text x="280" y="430" font-family="monospace" font-size="9" class="tag-t">HTML</text>
+<rect x="320" y="416" width="40" height="20" rx="10" class="tag"/><text x="332" y="430" font-family="monospace" font-size="9" class="tag-t">CSS</text>
+
+<text x="40" y="454" font-family="monospace" font-size="8" class="muted" letter-spacing="1.5">FRONTEND</text>
+<rect x="40"  y="460" width="46" height="20" rx="10" class="tag2"/><text x="52"  y="474" font-family="monospace" font-size="9" class="tag2-t">React</text>
+<rect x="92"  y="460" width="56" height="20" rx="10" class="tag2"/><text x="100" y="474" font-family="monospace" font-size="9" class="tag2-t">Next.js</text>
+<rect x="154" y="460" width="62" height="20" rx="10" class="tag2"/><text x="162" y="474" font-family="monospace" font-size="9" class="tag2-t">Tailwind</text>
+
+<text x="40" y="498" font-family="monospace" font-size="8" class="muted" letter-spacing="1.5">BACKEND</text>
+<rect x="40"  y="504" width="58" height="20" rx="10" class="tag"/><text x="50"  y="518" font-family="monospace" font-size="9" class="tag-t">Node.js</text>
+<rect x="104" y="504" width="58" height="20" rx="10" class="tag"/><text x="114" y="518" font-family="monospace" font-size="9" class="tag-t">Express</text>
+<rect x="168" y="504" width="50" height="20" rx="10" class="tag"/><text x="178" y="518" font-family="monospace" font-size="9" class="tag-t">Prisma</text>
+
+<text x="40" y="542" font-family="monospace" font-size="8" class="muted" letter-spacing="1.5">DATABASES</text>
+<rect x="40"  y="548" width="64" height="20" rx="10" class="tag3"/><text x="50"  y="562" font-family="monospace" font-size="9" class="tag3-t">MongoDB</text>
+<rect x="110" y="548" width="46" height="20" rx="10" class="tag3"/><text x="120" y="562" font-family="monospace" font-size="9" class="tag3-t">MySQL</text>
+<rect x="162" y="548" width="72" height="20" rx="10" class="tag3"/><text x="170" y="562" font-family="monospace" font-size="9" class="tag3-t">PostgreSQL</text>
+<rect x="240" y="548" width="66" height="20" rx="10" class="tag3"/><text x="248" y="562" font-family="monospace" font-size="9" class="tag3-t">Supabase</text>
+
+<text x="40" y="586" font-family="monospace" font-size="8" class="muted" letter-spacing="1.5">TOOLS</text>
+<rect x="40"  y="592" width="30" height="20" rx="10" class="tag"/><text x="50"  y="606" font-family="monospace" font-size="9" class="tag-t">Git</text>
+<rect x="76"  y="592" width="54" height="20" rx="10" class="tag"/><text x="84"  y="606" font-family="monospace" font-size="9" class="tag-t">GitHub</text>
+<rect x="136" y="592" width="60" height="20" rx="10" class="tag"/><text x="144" y="606" font-family="monospace" font-size="9" class="tag-t">VS Code</text>
+<rect x="202" y="592" width="50" height="20" rx="10" class="tag"/><text x="210" y="606" font-family="monospace" font-size="9" class="tag-t">Figma</text>
+
+<text x="40"  y="650" font-family="monospace" font-size="9" fill="#3FA9F5">TS</text><text x="64"  y="650" font-family="monospace" font-size="9" fill="#F7DF1E">JS</text>
+<text x="88"  y="650" font-family="monospace" font-size="9" fill="#3FA9F5">PY</text><text x="112" y="650" font-family="monospace" font-size="9" fill="#61DAFB">RE</text>
+<text x="136" y="650" font-family="monospace" font-size="9" fill="white">NX</text><text x="160" y="650" font-family="monospace" font-size="9" fill="#68A063">ND</text>
+<text x="184" y="650" font-family="monospace" font-size="9" fill="#47A248">MG</text><text x="208" y="650" font-family="monospace" font-size="9" fill="#4479A1">SQ</text>
+<text x="232" y="650" font-family="monospace" font-size="9" fill="#3ECF8E">SB</text><text x="256" y="650" font-family="monospace" font-size="9" fill="#F05032">GT</text>
+<text x="280" y="650" font-family="monospace" font-size="9" fill="#007ACC">VS</text><text x="304" y="650" font-family="monospace" font-size="9" fill="#F24E1E">FG</text>
+<text x="328" y="650" font-family="monospace" font-size="9" fill="#38BDF8">TW</text><text x="352" y="650" font-family="monospace" font-size="9" fill="#5A67D8">PR</text>
+
+<!-- ═══ ACTIVITY ═══ -->
+<rect x="434" y="360" width="402" height="360" rx="12" class="glass2"/>
+<text x="450" y="384" font-family="monospace" font-size="9" class="sec" letter-spacing="2">📊 ACTIVIDAD SEMANAL</text>
+<line x1="450" y1="392" x2="818" y2="392" stroke="rgba(92,88,237,.15)" stroke-width="1"/>
+<text x="450" y="412" font-family="monospace" font-size="8" class="muted">commits últimos 7 días</text>
+
+<rect x="470" y="479" width="26" height="4" rx="3" fill="url(#barGrad)" opacity="0.65" class="bar" style="animation-delay:0.00s"/>
+<rect x="508" y="479" width="26" height="4" rx="3" fill="url(#barGrad)" opacity="0.65" class="bar" style="animation-delay:0.15s"/>
+<rect x="546" y="479" width="26" height="4" rx="3" fill="url(#barGrad)" opacity="0.65" class="bar" style="animation-delay:0.30s"/>
+<rect x="584" y="479" width="26" height="4" rx="3" fill="url(#barGrad)" opacity="0.65" class="bar" style="animation-delay:0.45s"/>
+<rect x="622" y="479" width="26" height="4" rx="3" fill="url(#barGrad)" opacity="0.65" class="bar" style="animation-delay:0.60s"/>
+<rect x="660" y="413" width="26" height="70" rx="3" fill="url(#barGrad)" opacity="1" class="bar" style="animation-delay:0.75s"/>
+<rect x="698" y="473" width="26" height="10" rx="3" fill="url(#barGrad)" opacity="0.7000000000000001" class="bar" style="animation-delay:0.90s"/>
+<text x="483" y="498" font-family="monospace" font-size="9" class="muted" text-anchor="middle">L</text>
+<text x="521" y="498" font-family="monospace" font-size="9" class="muted" text-anchor="middle">M</text>
+<text x="559" y="498" font-family="monospace" font-size="9" class="muted" text-anchor="middle">X</text>
+<text x="597" y="498" font-family="monospace" font-size="9" class="muted" text-anchor="middle">J</text>
+<text x="635" y="498" font-family="monospace" font-size="9" class="muted" text-anchor="middle">V</text>
+<text x="673" y="498" font-family="monospace" font-size="9" class="muted" text-anchor="middle">S</text>
+<text x="711" y="498" font-family="monospace" font-size="9" class="muted" text-anchor="middle">D</text>
+
+
+<text x="450" y="518" font-family="monospace" font-size="11" class="muted">🔥 Racha actual: <tspan fill="#56E1E8" font-weight="700">2 días</tspan></text>
+<text x="450" y="538" font-family="monospace" font-size="11" class="muted">⭐ Longest streak: <tspan fill="#3FA9F5" font-weight="700">4 días</tspan></text>
+<text x="450" y="558" font-family="monospace" font-size="11" class="muted">📊 Total contribuciones: <tspan fill="#5C58ED">90</tspan></text>
+<text x="450" y="578" font-family="monospace" font-size="11" class="muted">📦 Repositorios públicos: <tspan fill="#3FA9F5">16</tspan></text>
+
+<text x="450" y="610" font-family="monospace" font-size="8" class="muted" letter-spacing="1.5">TOP LANGUAGES</text>
+
+    <text x="450" y="630" font-family="monospace" font-size="9" class="muted">TypeScript</text>
+    <rect x="530" y="619" width="240" height="12" rx="6" fill="rgba(255,255,255,.05)"/>
+    <rect x="530" y="619" width="130" height="12" rx="6" fill="#3178C6" opacity=".85"/>
+    <text x="665" y="630" font-family="monospace" font-size="9" class="muted" dx="4">54%</text>
+    <text x="450" y="650" font-family="monospace" font-size="9" class="muted">JavaScript</text>
+    <rect x="530" y="639" width="240" height="12" rx="6" fill="rgba(255,255,255,.05)"/>
+    <rect x="530" y="639" width="55" height="12" rx="6" fill="#F7DF1E" opacity=".85"/>
+    <text x="590" y="650" font-family="monospace" font-size="9" class="muted" dx="4">23%</text>
+    <text x="450" y="670" font-family="monospace" font-size="9" class="muted">HTML</text>
+    <rect x="530" y="659" width="240" height="12" rx="6" fill="rgba(255,255,255,.05)"/>
+    <rect x="530" y="659" width="19" height="12" rx="6" fill="#E34F26" opacity=".85"/>
+    <text x="554" y="670" font-family="monospace" font-size="9" class="muted" dx="4">8%</text>
+    <text x="450" y="690" font-family="monospace" font-size="9" class="muted">CSS</text>
+    <rect x="530" y="679" width="240" height="12" rx="6" fill="rgba(255,255,255,.05)"/>
+    <rect x="530" y="679" width="19" height="12" rx="6" fill="#56E1E8" opacity=".85"/>
+    <text x="554" y="690" font-family="monospace" font-size="9" class="muted" dx="4">8%</text>
+
+<!-- ═══ CONNECT ═══ -->
+<rect x="24" y="736" width="812" height="96" rx="12" class="glass"/>
+<text x="40" y="758" font-family="monospace" font-size="9" class="sec" letter-spacing="2">🌐 CONECTEMOS</text>
+<line x1="40" y1="766" x2="820" y2="766" stroke="rgba(63,169,245,.15)" stroke-width="1"/>
+
+<rect x="40"  y="778" width="130" height="34" rx="8" fill="rgba(63,169,245,.15)"  stroke="rgba(63,169,245,.4)"  stroke-width="1"/>
+<text x="58"  y="792" font-family="monospace" font-size="10" fill="white">💼</text>
+<text x="74"  y="792" font-family="monospace" font-size="10" fill="#3FA9F5">LinkedIn</text>
+<text x="58"  y="805" font-family="monospace" font-size="8"  fill="#8b99ae">sarahi-cruz-aguirre</text>
+
+<rect x="184" y="778" width="200" height="34" rx="8" fill="rgba(92,88,237,.12)"   stroke="rgba(92,88,237,.35)"  stroke-width="1"/>
+<text x="200" y="792" font-family="monospace" font-size="10" fill="white">📧</text>
+<text x="216" y="792" font-family="monospace" font-size="10" fill="#5C58ED">Gmail</text>
+<text x="200" y="805" font-family="monospace" font-size="8"  fill="#8b99ae">park02697@gmail.com</text>
+
+<rect x="398" y="778" width="170" height="34" rx="8" fill="rgba(86,225,232,.08)"  stroke="rgba(86,225,232,.3)"  stroke-width="1"/>
+<text x="414" y="792" font-family="monospace" font-size="10" fill="white">🐙</text>
+<text x="430" y="792" font-family="monospace" font-size="10" fill="#56E1E8">GitHub</text>
+<text x="414" y="805" font-family="monospace" font-size="8"  fill="#8b99ae">@SarahiCruzAguirre</text>
+
+<rect x="582" y="778" width="254" height="34" rx="8" fill="rgba(92,88,237,.15)"   stroke="rgba(92,88,237,.45)"  stroke-width="1"/>
+<text x="598" y="792" font-family="monospace" font-size="10" fill="white">🌐</text>
+<text x="614" y="792" font-family="monospace" font-size="10" fill="#5C58ED">3D Scene · Spline</text>
+<text x="598" y="805" font-family="monospace" font-size="8"  fill="#8b99ae">orbitalbluestar.spline.design</text>
+
+<text x="430" y="870" font-family="monospace" font-size="11" fill="rgba(139,153,174,.35)" text-anchor="middle">// turning caffeine into code, one commit at a time ☕</text>
+<text x="430" y="896" font-family="monospace" font-size="8"  fill="rgba(92,88,237,.4)"   text-anchor="middle">✦ SarahiCruzAguirre · updated 16 de may de 2026 ✦</text>
+
+</g>
+</svg>
