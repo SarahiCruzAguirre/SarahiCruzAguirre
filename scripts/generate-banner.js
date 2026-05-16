@@ -215,7 +215,7 @@ function buildSVG(d) {
   const bars = buildBars(d.weeklyCommits);
   const langBars = buildLangBars(d.topLangs);
 
-  return `<svg width="860" height="980" viewBox="0 0 860 980" xmlns="http://www.w3.org/2000/svg">
+  return `<svg width="860" height="980" viewBox="0 0 860 980" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
 <defs>
 <style>
 @keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
@@ -331,7 +331,7 @@ function buildSVG(d) {
 <rect x=".5" y=".5" width="859" height="979" rx="15.5" fill="none" stroke="rgba(63,169,245,.2)" stroke-width="1"/>
 
 <!-- ═══ HERO ═══ -->
-<rect x="24" y="20" width="812" height="216" rx="14" class="glass"/>
+<rect x="24" y="20" width="812" height="230" rx="14" class="glass"/>
 
 <!-- Opossum avatar -->
 <g transform="translate(44,36)">
@@ -375,15 +375,15 @@ function buildSVG(d) {
 <text x="184" y="124" font-family="monospace" font-size="13" fill="#5C58ED">@SarahiCruzAguirre · park02697@gmail.com</text>
 
 <rect x="184" y="138" width="108" height="24" rx="12" fill="rgba(63,169,245,.12)"  stroke="rgba(63,169,245,.35)"  stroke-width="1"/>
-<text x="204" y="154" font-family="monospace" font-size="11" fill="#3FA9F5">⚡ Open to Work</text>
+<text x="196" y="154" font-family="monospace" font-size="10" fill="#3FA9F5">⚡ Open to Work</text>
 
 <rect x="300" y="138" width="110" height="24" rx="12" fill="rgba(92,88,237,.12)"   stroke="rgba(92,88,237,.35)"   stroke-width="1"/>
-<text x="318" y="154" font-family="monospace" font-size="11" fill="#5C58ED">🎯 Medellín, CO</text>
+<text x="310" y="154" font-family="monospace" font-size="10" fill="#5C58ED">🎯 Medellín, CO</text>
 
-<rect x="418" y="138" width="140" height="24" rx="12" fill="rgba(86,225,232,.10)"  stroke="rgba(86,225,232,.30)"  stroke-width="1"/>
-<text x="436" y="154" font-family="monospace" font-size="11" fill="#56E1E8">✨ Building cool stuff</text>
+<rect x="418" y="138" width="142" height="24" rx="12" fill="rgba(86,225,232,.10)"  stroke="rgba(86,225,232,.30)"  stroke-width="1"/>
+<text x="428" y="154" font-family="monospace" font-size="10" fill="#56E1E8">✨ Building cool stuff</text>
 
-<rect x="184" y="174" width="280" height="36" rx="8"  fill="rgba(92,88,237,.08)"   stroke="rgba(92,88,237,.25)"   stroke-width="1"/>
+<rect x="184" y="174" width="270" height="36" rx="8"  fill="rgba(92,88,237,.08)"   stroke="rgba(92,88,237,.25)"   stroke-width="1"/>
 <text x="196" y="189" font-family="monospace" font-size="9"  fill="#8b99ae">🌐 INTERACTIVE 3D · SPLINE</text>
 <text x="196" y="204" font-family="monospace" font-size="9"  fill="#5C58ED">orbitalbluestar.spline.design ↗</text>
 <text x="620" y="224" font-family="monospace" font-size="8"  fill="rgba(139,153,174,.4)">updated ${d.updatedAt}</text>
