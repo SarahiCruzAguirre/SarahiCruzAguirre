@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/banner.svg" alt="Sarahi Cruz Aguirre" width="860"/>
+  <img src="./assets/banner.svg" alt="Sarahi Cruz Aguirre" width="100%"/>
 </p>
 
 <div align="center">
