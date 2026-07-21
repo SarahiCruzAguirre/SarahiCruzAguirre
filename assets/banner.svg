@@ -169,7 +169,7 @@
 <rect x="184" y="174" width="270" height="36" rx="8"  fill="rgba(92,88,237,.08)"   stroke="rgba(92,88,237,.25)"   stroke-width="1"/>
 <text x="196" y="189" font-family="monospace" font-size="9"  fill="#8b99ae">🌐 INTERACTIVE 3D · SPLINE</text>
 <text x="196" y="204" font-family="monospace" font-size="9"  fill="#5C58ED">orbitalbluestar.spline.design ↗</text>
-<text x="620" y="224" font-family="monospace" font-size="8"  fill="rgba(139,153,174,.4)">updated 20 de jul de 2026</text>
+<text x="620" y="224" font-family="monospace" font-size="8"  fill="rgba(139,153,174,.4)">updated 21 de jul de 2026</text>
 
 <!-- ═══ STATS ═══ -->
 <rect x="24"  y="252" width="254" height="90" rx="12" class="glass"/>
@@ -302,7 +302,7 @@
 <text x="598" y="805" font-family="monospace" font-size="8"  fill="#8b99ae">orbitalbluestar.spline.design</text>
 
 <text x="430" y="870" font-family="monospace" font-size="11" fill="rgba(139,153,174,.35)" text-anchor="middle">// turning caffeine into code, one commit at a time ☕</text>
-<text x="430" y="896" font-family="monospace" font-size="8"  fill="rgba(92,88,237,.4)"   text-anchor="middle">✦ SarahiCruzAguirre · updated 20 de jul de 2026 ✦</text>
+<text x="430" y="896" font-family="monospace" font-size="8"  fill="rgba(92,88,237,.4)"   text-anchor="middle">✦ SarahiCruzAguirre · updated 21 de jul de 2026 ✦</text>
 
 </g>
 </svg>
